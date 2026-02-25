@@ -1,0 +1,63 @@
+/* Old Terminal Theme */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+body {
+    background-color: #000; /* Black background */
+    color: #1aff1a;        /* Classic terminal green */
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    padding: 20px;
+    text-transform: uppercase; /* Feels more like a government computer */
+}
+
+.terminal-container {
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #1aff1a;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(26, 255, 26, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #1aff1a;
+    color: #1aff1a;
+    font-family: inherit;
+    font-size: 1.1em;
+    width: 100%;
+    outline: none;
+}
+
+.terminal-btn {
+    background: #1aff1a;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.terminal-btn:hover {
+    background: #000;
+    color: #1aff1a;
+    outline: 1px solid #1aff1a;
+}
+
+.crt-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 4px, 3px 100%;
+    pointer-events: none; 
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TERMINAL - DELTA GREEN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="crt-overlay"></div>
+    <div class = "terminal-container">
+        <form action="/generate/" method="post">
+            <header>
+            <h1>CREATING NEW DELTA GREEN AGENT...</h1>
+        </header>
+            <section class="form-group">
+                <label>> AGENT NAME (Last, First, MI):</label>
+                <input type="text" name="agent_name" required autofocus>
+            </section>
+
+            <section class="form-group">
+                <label>> PROFESSION:</label>
+                <select name="profession">
+                    <option value="1">Anthropologist or Historian</option>
+                    <option value="2">Computer Scientist or Engineer</option>
+                    <option value="3">Federal Agent</option>
+                    <option value="4">Physician</option>
+                    <option value="5">Scientist</option>
+                    <option value="6">Special Operator</option>
+                </select>
+            </section>
+
+            <section class="form-group">
+                <label>> EMPLOYER: </label>
+                <input type="text" name="employer">
+            </section>
+
+            <button type="submit" class="terminal-btn">CREATE_AGENT</button>
+        </form>
+    </div>
+</body>
+</html>
